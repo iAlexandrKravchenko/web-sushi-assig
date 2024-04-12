@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Sushi Web Page</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.webp" alt="Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="login.html">Sign IN</a></li>
+    </ul>
+    <div class="cart">
+      <a href="cart.html">
+        <img src="../img/cart-icon.webp" alt="Cart">
+      </a>
+    </div>
+  </nav>
+</header>
+<div class="body-wrapper">
+<div class="form-container">
+  <h2>Register</h2>
+  <form action="#" method="POST" class="register-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <!-- Новое поле для номера телефона -->
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[+]?[0-9]{1,3}[ ]?([-]?[0-9]{1,4}[ ]?){1,3}" placeholder="+353 87 654 3210" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+    </div>
+    <button type="submit" class="submit-btn">Register</button>
+    <p class="switch-form">Already have an account? <a href="login.html">Login here</a></p>
+  </form>
+</div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="copy-right">
+      <p>&copy; 2024 Sushi Website. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

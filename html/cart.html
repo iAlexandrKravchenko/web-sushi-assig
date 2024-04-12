@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Sushi Web Page</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../img/logo.webp" alt="Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="login.html">Sign IN</a></li>
+      <li><a href="register.html">Sign UP</a></li>
+    </ul>
+    <div class="cart">
+      <a href="cart.html">
+        <img src="../img/cart-icon.webp" alt="Cart">
+      </a>
+    </div>
+  </nav>
+</header>
+
+<div class="cart-container">
+  <h2>Your Cart</h2>
+  <div class="cart-items">
+    <!-- Элементы корзины будут добавляться здесь -->
+  </div>
+  <div class="cart-summary">
+    <h3>Summary</h3>
+    <p>Total: <span>0 €</span></p>
+    <button id="checkout-button" class="checkout-btn">Checkout</button>
+  </div>
+  <form id="order-form" style="display: none;">
+    <h3>Place your order</h3>
+    <input type="text" id="name" placeholder="Your name" required>
+    <input type="text" id="address" placeholder="Your address" required>
+    <input type="tel" id="phone" placeholder="Your phone number" required>
+    <button type="submit" class="submit-btn">Submit Order</button>
+  </form>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="copy-right">
+      <p>&copy; 2024 Sushi Website. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/cart.js"></script>
+
+</body>
+</html>
